@@ -1,4 +1,6 @@
 # azure-servicebus-browser
+## Known issues
+Unfortunately, the Azure.Messaging.ServiceBus SDK does not support server-side filtering. Therefore, filtering on queue / topic / subscription names may lead to inconsistent results in the application for now. See [this topic on stack overflow](https://stackoverflow.com/questions/77697436/filtering-topics-queues-subscriptions-with-azure-messaging-servicebus)
 ## Introduction
 Azure Servicebus Browser is a basic tool that supports management and inspection of some of the most common resources of [Azure service bus](https://azure.microsoft.com/en-us/products/service-bus/). Today, it supports queues, topics and subscriptions, with inspection and replay of messages etc. By no means it is a *complete* tool, although it fulfills most if not all of my needs for day to day tasks, because these are the resources we use in my current projects.
 
